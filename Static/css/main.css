@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    background-color: #A4C9D7;
+}
+
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('Font/raleway-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+* {
+    font-family: ralewaythin;
+    font-weight: 600;
+}

@@ -1,0 +1,97 @@
+
+body,div,ul,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,input{
+    margin: 0;
+    padding: 0;
+	position: relative;
+    background: #A4C9D7;
+}
+
+img{
+    border: 0 none;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+input{
+    border: 0 none;
+    outline-style: none;
+}
+.fl{
+    float: left;
+}
+.fmid{float:none;
+}
+.fr{
+    float: right;
+}
+.header{
+    width: 1920px;
+    height: 113px;
+	top:0px;
+}
+.logo{
+  position: absolute;
+  width: 1003px;
+  height: 113px;
+  left: 142px;
+	font-family: ralewaythin;
+font-style: normal;
+font-weight: normal;
+font-size: 90px;
+line-height: 113px;
+	color: #FFFFFF;
+}
+.login{
+   position: absolute;
+	width: 334px;
+	height: 101px;
+	left: 1550px;
+    border-width: 0px;
+	border-radius: 3px;
+	background:#B7E2F2;;
+	font-family: ralewaythin;
+	color: white;
+	text-align: center;
+	font-size: 40px; }
+.main{
+	position: absolute;
+	width: 1378px;
+	height: 161px;
+	left: 142px;
+	top: 200px;
+	font-family: ralewaythin;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 56px;
+
+color: #FFFFFF;
+}
+.banner{
+    width: 1920px;
+    height: 500px;
+	top: 300px;
+    margin: 0 auto;
+}
+.Music{
+ position: absolute;
+width: 288.19px;
+height: 500px;
+left: 142px;
+}
+.mon{
+	position: absolute;
+width: 370.83px;
+height: 500px;
+left: 667px;
+}
+.wom{
+position: absolute;
+width: 584.72px;
+height: 500px;
+left: 1273px;
+margin: 0 auto;
+}

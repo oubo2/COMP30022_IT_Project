@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('font/raleway-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+  height: 100%;
+  background: #a4c9d7;
+}
+
+.view-counter{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.profile-section {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.profile-section #header {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.profile-section #header h1 {
+  color: #333;
+}
+
+.profile-section #header ul {
+  margin-top: 15px;
+}
+
+.profile-section #header li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.profile-section #header a {
+  text-decoration: none;
+  line-height: 20px;
+  font-size: 18px;
+  color: #666;
+}
+
+.profile-section #header a:hover {
+  color: #dc7684;
+}
+
+.profile-section #section {
+  margin-top: 20px;
+  box-shadow: 2px 3px 17px #2d7f9d;
+}
+
+.profile-section #section h3 {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+
+.profile-section #section .gallery {
+  width: 100%;
+  height: 367px;
+  text-align: center;
+}
+
+.profile-section #section .img {
+  width: 249px;
+  height: 357px;
+}
+
+.profile-section #section .profile-item {
+  padding: 20px;
+}
+
+.profile-section #section .profile-item-short {
+  padding: 12px;
+  font-size: 20px;
+}
+
+.profile-section #section .profile-title {
+  font-size: 36px;
+  color: #333;
+}
+
+.profile-section #section .profile-desc {
+  line-height: 28px;
+  font-size: 20px;
+  color: #333;
+}
+
+.profile-section #section .profile-title-short {
+  font-size: 23px;
+  color: #333;
+}
+
+.profile-section #section .profile-desc-short {
+  line-height: 18px;
+  font-size: 17px;
+  color: #333;
+}

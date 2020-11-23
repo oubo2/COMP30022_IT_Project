@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:heroku" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="e2192848-31b4-43dd-967a-b81b5522fb86" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="e2192848-31b4-43dd-967a-b81b5522fb86" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/Static/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/Static/css/profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/profile_pdf.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/profile_pdf.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+=======
+>>>>>>> b194416edccbc22afc52ae66ff196ef7f10f1f89
+    </list>
+>>>>>>> f2bab7aec5e408ff4dc9cee41302f391951e62d4
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/COMP30022_IT_Project" value="Kai-Flask-Backend" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="ProjectId" id="1h8ckjDM87nxg3NgkXIBVf8N33L" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kai\Desktop\University\COMP30022\Flask Backend\Static\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Kai\Desktop\University\COMP30022\Flask Backend\Templates" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Flask Backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="S3_BUCKET" value="sss-portfolio" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Kai\Desktop\University\COMP30022\Flask Backend\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e2192848-31b4-43dd-967a-b81b5522fb86" name="Default Changelist" comment="" />
+      <created>1599396304470</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599396304470</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/COMP30022_IT_Project" />
+    </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="42" key="#Inspections" timestamp="1599557942750">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="42" key="#Inspections/0.0.1366.768@0.0.1366.768" timestamp="1599557942750" />
+    <state x="275" y="42" key="#Notifications" timestamp="1600087765634">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="42" key="#Notifications/0.0.1366.768@0.0.1366.768" timestamp="1600087765634" />
+    <state x="137" y="38" width="1092" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603094492029">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="137" y="38" width="1092" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1603094492029" />
+    <state x="506" y="200" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604966850114">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="450" y="186" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1603096810568" />
+    <state x="506" y="200" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1604966850114" />
+    <state x="322" y="0" key="CommitChangelistDialog2" timestamp="1599412148148">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="322" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1599412148148" />
+    <state x="417" y="153" key="EnvironmentVariablesDialog" timestamp="1603094490885">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="417" y="153" key="EnvironmentVariablesDialog/0.0.1366.768@0.0.1366.768" timestamp="1603094490885" />
+    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1601983877480">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1601983877480" />
+    <state x="184" y="26" key="SettingsEditor" timestamp="1603877154689">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1603877154689" />
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2" timestamp="1599411969724">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1599411969724" />
+    <state x="92" y="92" width="1182" height="584" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1599412084219">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="92" y="92" width="1182" height="584" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1366.768@0.0.1366.768" timestamp="1599412084219" />
+    <state x="92" y="92" width="1182" height="584" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1602651667116">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="92" y="92" width="1182" height="584" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1602651667116" />
+    <state x="379" y="116" width="607" height="536" key="find.popup" timestamp="1600840471379">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="379" y="116" width="607" height="536" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1600840471379" />
+  </component>
+</project>

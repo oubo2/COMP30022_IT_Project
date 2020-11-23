@@ -1,0 +1,233 @@
+{% extends 'base.html' %}
+
+{% block head %}
+  {{super()}}
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css"
+        integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css"
+        integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+{% endblock %}
+
+
+{% block body %}
+<link rel="stylesheet" href="/Static/css/art_portfolio.css" />
+<div class="art_portfolio-section"  action="/view_user_portfolio/{{id}}">
+
+    <h1>{{ name }}'s Portfolio</h1>
+
+    <div class="art_portfolio-table">
+
+      <p class="art_portfolio-table-title" style="text-align: center">Images</p>
+      <table class="art_portfolio-table-body" border="1" cellspacing="0">
+        <tr>
+          <th>Image</th>
+          <th>Upload Date</th>
+          <th>Type</th>
+          <th>Actions</th>
+        </tr>
+        {% for file in storage %}
+
+        <tr>
+          {% if show_own_items(user_id, file.key) and filter_image(file.key) %}
+          <td>
+            <img style="max-width: 200px; height: auto;" src={{ get_image(file.key) }} />
+            <p>{{ remove_file_id(file.key) }}</p>
+          </td>
+
+          <td>
+            {{ file.last_modified | convert_date }}
+          </td>
+
+          <td>
+            {{ file.key | file_type }}
+          </td>
+
+          <td>
+
+            <form class="download_item" action="/s3_download" method="post">
+              <input type="hidden" name="key" value="{{ file.key }}">
+              <button type="submit" class="btn btn-default btn-sm">
+                <i class="fa fa-download"></i>
+              </button>
+            </form>
+          </td>
+          {% endif %}
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+
+    <div class="art_portfolio-table">
+
+      <p class="art_portfolio-table-title" style="text-align: center">Videos</p>
+      <table class="art_portfolio-table-body" border="1" cellspacing="0">
+        <tr>
+          <th>Video</th>
+          <th>Upload Date</th>
+          <th>Type</th>
+          <th>Actions</th>
+        </tr>
+        {% for file in storage %}
+
+        <tr>
+          {% if show_own_items(user_id, file.key) and filter_video(file.key) %}
+          <td>
+            <img width="100" height="100" src="/Static/Icons/video_icon.png" }} />
+            <p>{{ remove_file_id(file.key) }}</p>
+          </td>
+
+          <td>
+            {{ file.last_modified | convert_date }}
+          </td>
+
+          <td>
+            {{ file.key | file_type }}
+          </td>
+
+          <td>
+
+            <form class="download_item" action="/s3_download" method="post">
+              <input type="hidden" name="key" value="{{ file.key }}">
+              <button type="submit" class="btn btn-default btn-sm">
+                <i class="fa fa-download"></i>
+              </button>
+            </form>
+          </td>
+          {% endif %}
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+
+
+
+
+
+    <div class="art_portfolio-table">
+
+      <p class="art_portfolio-table-title" style="text-align: center">Word Documents</p>
+      <table class="art_portfolio-table-body" border="1" cellspacing="0">
+        <tr>
+          <th>File</th>
+          <th>Upload Date</th>
+          <th>Type</th>
+          <th>Actions</th>
+        </tr>
+        {% for file in storage %}
+
+        <tr>
+          {% if show_own_items(user_id, file.key) and filter_word(file.key) %}
+          <td>
+            <img width="100" height="100" src="/Static/Icons/docx_icon.png" />
+            <p>{{ remove_file_id(file.key) }}</p>
+          </td>
+
+          <td>
+            {{ file.last_modified | convert_date }}
+          </td>
+
+          <td>
+            {{ file.key | file_type }}
+          </td>
+
+          <td>
+
+            <form class="download_item" action="/s3_download" method="post">
+              <input type="hidden" name="key" value="{{ file.key }}">
+              <button type="submit" class="btn btn-default btn-sm">
+                <i class="fa fa-download"></i>
+              </button>
+            </form>
+          </td>
+          {% endif %}
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+
+    <div class="art_portfolio-table">
+    <p class="art_portfolio-table-title" style="text-align: center">PDF</p>
+      <table class="art_portfolio-table-body" border="1" cellspacing="0">
+        <tr>
+          <th>File</th>
+          <th>Upload Date</th>
+          <th>Type</th>
+          <th>Actions</th>
+        </tr>
+        {% for file in storage %}
+
+        <tr>
+          {% if show_own_items(user_id, file.key) and filter_pdf(file.key) %}
+          <td>
+            <img width="100" height="100" src="/Static/Icons/pdf_icon.png" />
+            <p>{{ remove_file_id(file.key) }}</p>
+          </td>
+
+          <td>
+            {{ file.last_modified | convert_date }}
+          </td>
+
+          <td>
+            {{ file.key | file_type }}
+          </td>
+
+          <td>
+
+            <form class="download_item" action="/s3_download" method="post">
+              <input type="hidden" name="key" value="{{ file.key }}">
+              <button type="submit" class="btn btn-default btn-sm">
+                <i class="fa fa-download"></i>
+              </button>
+            </form>
+          </td>
+          {% endif %}
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+
+
+    <div class="art_portfolio-table">
+  <p class="art_portfolio-table-title" style="text-align: center">Miscellaneous</p>
+      <table class="art_portfolio-table-body" border="1" cellspacing="0">
+        <tr>
+          <th>File</th>
+          <th>Upload Date</th>
+          <th>Type</th>
+          <th>Actions</th>
+        </tr>
+        {% for file in storage %}
+
+        <tr>
+          {% if show_own_items(user_id, file.key) and filter_misc(file.key) %}
+          <td>
+            <img width="100" height="100" src="/Static/Icons/misc_icon.png" />
+            <p>{{ remove_file_id(file.key) }}</p>
+          </td>
+
+          <td>
+            {{ file.last_modified | convert_date }}
+          </td>
+
+          <td>
+            {{ file.key | file_type }}
+          </td>
+
+          <td>
+
+            <form class="download_item" action="/s3_download" method="post">
+              <input type="hidden" name="key" value="{{ file.key }}">
+              <button type="submit" class="btn btn-default btn-sm">
+                <i class="fa fa-download"></i>
+              </button>
+            </form>
+          </td>
+          {% endif %}
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+  <head>
+    <meta charset="" utf-8 />
+    <title>Profile Page</title>
+  </head>
+
+  <body>
+    <div class="profile-section">
+      <div id="header">
+        <h1>Welcome {{ name }}! This is your profile page!</h1>
+      </div>
+      <div id="section">
+        <table width="100%" border="0">
+          <tr valign="top">
+            <td bgcolor="#76B2CC" width="50">
+              <h3>Your Profile Picture</h3>
+
+              <div class="gallery">
+                  <img style="max-width: 200px; height: auto;" src={{ img_src }} />
+                <p></p>
+                <div class="profile-item-short">
+                      <p class="profile-title-short">Age</p>
+                      <p class="profile-desc-short">{{ calc_age(birth_year, birth_month, birth_date) }}</p>
+                  </div>
+                  <div class="profile-item-short">
+                      <p class="profile-title-short">Occupation</p>
+                      <p class="profile-desc-short">{{ occupation }}</p>
+                  </div>
+                  <div class="profile-item-short">
+                      <p class="profile-title-short">Education</p>
+                      <p class="profile-desc-short">{{ education }}</p>
+                  </div>
+              </div>
+
+            </td>
+            <td bgcolor="#76B2CC" width="65%" height="500" style="font-size: 30px">
+              <div class="profile-item">
+                <p class="profile-title">Interests</p>
+                <p class="profile-desc">{{ interests }}</p>
+              </div>
+              <div class="profile-item">
+                <p class="profile-title">Bio</p>
+                <p class="profile-desc">{{ bio }}</p>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+
+
+{% endblock %}

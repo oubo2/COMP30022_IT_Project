@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+
+  <!--Testing Login-->
+<!--Testing Login Success-->
+  <head>
+    <meta charset="" utf-8 />
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="/Static/css/profile.css", _external="True" />
+  </head>
+
+  <body>
+    <div class="view-counter">
+      <h3>View Count: {{ counter }} </h3>
+    </div>
+    <div class="profile-section">
+      <div id="header">
+        <h1>Welcome {{ name }}! This is your profile page!</h1>
+        <ul>
+          <li><a class="button" href="art_portfolio">Portfolio</a></li>
+          <li><a class="button" href="/">Landing Page</a></li>
+          <li><a class="button" href="pdf">Export as pdf</a></li>
+          <li><a class="button" href="logout">Logout</a></li>
+          <li style="float: right"><a class="active" href="/edit_profile/{{id}}">Edit Profile</a></li>
+        </ul>
+      </div>
+      <div id="section">
+        <table width="100%" border="0">
+          <tr valign="top">
+            <td bgcolor="#76B2CC" width="50">
+              <h3>Your Profile Picture</h3>
+
+              <div class="gallery">
+                  <img style="max-width: 200px; height: auto;" src={{ get_avatar(id) }} />
+                  <div class="container">
+                      {% with messages = get_flashed_messages() %}
+                          {% if messages %}
+                              <p class="bg-info" style="padding: 15px;">
+                                  {% for msg in messages %}
+                                      {{ msg }} <br>
+                                  {% endfor %}
+                              </p>
+                          {% endif %}
+                      {% endwith %}
+                  </div>
+                  <form action="/s3_avatar_upload" method="POST" enctype="multipart/form-data">
+                      <div class="custom-file">
+                          <input id="image" class="custom-file-input" name="image" type="file" />
+                      </div>
+                    <div><button type="submit" class="btn btn-primary">Upload File</button></div>
+                  </form>
+                  <p></p>
+                  <div class="profile-item-short">
+                      <p class="profile-title-short">Age</p>
+                      <p class="profile-desc-short">{{ calc_age(birth_year, birth_month, birth_date) }}</p>
+                  </div>
+                  <div class="profile-item-short">
+                      <p class="profile-title-short">Occupation</p>
+                      <p class="profile-desc-short">{{ occupation }}</p>
+                  </div>
+                  <div class="profile-item-short">
+                      <p class="profile-title-short">Education</p>
+                      <p class="profile-desc-short">{{ education }}</p>
+                  </div>
+              </div>
+
+            </td>
+            <td bgcolor="#76B2CC" width="65%" height="500" style="font-size: 30px">
+              <div class="profile-item">
+                <p class="profile-title">Interests</p>
+                <p class="profile-desc">{{ interests }}</p>
+              </div>
+              <div class="profile-item">
+                <p class="profile-title">Bio</p>
+                <p class="profile-desc">{{ bio }}</p>
+              </div>
+
+
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+
+
+{% endblock %}

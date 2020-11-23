@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="/Static/css/login.css">
+<div class="container">
+    <div class="row">
+        <div class="col">
+
+            <!--Testing Login-->
+            <h1 style="text-align:center">Login</h1>
+
+            <div class="card">
+                <div class="card-body">
+                    <form class="box" action="/login" method="POST">
+
+                        {{ login_form.hidden_tag() }}
+                        {{ wtf.form_field(login_form.email) }}
+                        {{ wtf.form_field(login_form.password) }}
+
+                        {% with messages = get_flashed_messages() %}
+                            {% if messages %}
+                                <p class="bg-info" style="padding: 15px;">
+                                    {% for msg in messages %}
+                                        {{ msg }} <br>
+                                    {% endfor %}
+                                </p>
+                            {% endif %}
+                        {% endwith %}
+
+                        {{ wtf.form_field(login_form.remember) }}
+
+                        <p></p>
+
+                        <button type="submit" class="btn btn-primary">Login</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

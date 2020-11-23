@@ -1,0 +1,45 @@
+{% extends 'base.html' %} {% block head %} {% endblock %} {% block body %}
+<link rel="stylesheet" href="/Static/css/landing.css" />
+<body>
+<div class="header">
+	<div class="logo">ePortfolio -COMP30022</div>
+    <div class="login">
+		{% if not logged_in %}
+          <form action="/login">
+            <input class="button" type="submit" value="Login" />
+          </form>
+
+          <form action="/signup">
+            <input class="button" type="submit" value="Signup" />
+          </form>
+      {% endif %}
+
+		{% if logged_in %}
+
+          <form action="/art_portfolio">
+            <input class="button" type="submit" value="Portfolio" />
+          </form>
+
+          <form action="/profile">
+            <input class="button" type="submit" value="Profile" />
+          </form>
+
+          <form action="/logout">
+            <input class="button" type="submit" value="Logout" />
+          </form>
+      {% endif %}
+	</div>
+</div>
+<div class="main">Create and manage your digital portfolio - whether you're an aspiring artist, a motivated musician or a potential programmer.
+	</div>
+
+<div class="banner">
+    <div class="Music"><img src="/Static/Landing/aural.png"></div>
+	<div class="mon"><img src="/Static/Landing/monalisa.png"></div>
+	<div class="wom"><img src="/Static/Landing/programmer.png"></div>
+</div>
+
+
+</body>
+
+{% endblock %}

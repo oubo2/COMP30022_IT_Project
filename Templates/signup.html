@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="/Static/css/signup.css">
+
+            <!--Testing Signup-->
+            <h1 style="text-align:center">Signup</h1>
+
+
+
+
+                    <form class="box" action="/signup" method="POST">
+
+                        {{ signup_form.hidden_tag() }}
+
+                        {{ wtf.form_field(signup_form.email) }}
+                        {{ wtf.form_field(signup_form.password) }}
+                        {{ wtf.form_field(signup_form.name) }}
+                        {{ wtf.form_field(signup_form.interests) }}
+                        {{ wtf.form_field(signup_form.bio) }}
+                        {{ wtf.form_field(signup_form.occupation) }}
+                        {{ wtf.form_field(signup_form.education) }}
+
+                        <p>Birthday</p>
+
+                        <table>
+                            <tr>
+                                <td>{{ wtf.form_field(signup_form.birth_year) }}</td>
+                                <td>{{ wtf.form_field(signup_form.birth_month) }}</td>
+                                <td>{{ wtf.form_field(signup_form.birth_date) }}</td>
+                            </tr>
+                        </table>
+
+                        <p></p>
+
+                        <button type="submit" class="btn btn-primary">Signup</button>
+
+                    </form>
+
+{% endblock %}
